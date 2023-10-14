@@ -17,7 +17,7 @@ const AcneDetection = () => {
     const formData = new FormData();
     formData.append("file", file);
 
-    await fetch("http://192.168.0.104:7002/display", {
+    await fetch("http://localhost:7002/display", {
       method: "POST",
       body: formData,
     })

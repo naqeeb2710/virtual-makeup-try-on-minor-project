@@ -61,7 +61,7 @@ const ColorTryOn = () => {
       lipColor
     );
 
-    await fetch("http://192.168.0.104:7001/display", {
+    await fetch("http://localhost:7001/display", {
       method: "POST",
       body: formData,
     })

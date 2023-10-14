@@ -390,7 +390,7 @@ def evaluate(image_path, cp):
 
 def sharpen(img):
     img = img * 1.0
-    gauss_out = gaussian(img, sigma=5, multichannel=True)
+    gauss_out = gaussian(img, sigma=5)
 
     alpha = 1.5
     img_out = (img - gauss_out) * alpha + img
